@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "661838815943",
+    "project_id": "homyrecipes-9cf02",
+    "storage_bucket": "homyrecipes-9cf02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661838815943:android:41d043f7c26fa2ae9d14e2",
+        "android_client_info": {
+          "package_name": "com.example.homyrecipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661838815943-80e9ml4leeq4leufcqjhormjr8udkjih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.homyrecipes",
+            "certificate_hash": "0ba5cf8a246baf33041e48b84741371713ff5856"
+          }
+        },
+        {
+          "client_id": "661838815943-fl4ua7buhb891s9dgunlj8sk32aoar8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvY9FOAbBbwQChRj4gSgLH_RsAUjl08t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661838815943-fl4ua7buhb891s9dgunlj8sk32aoar8a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
