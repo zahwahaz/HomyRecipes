@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_home"
+        android:layout_width="380dp"
+        android:layout_height="390dp"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_home">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_resep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bala-Bala Rich"
+                android:typeface="serif"
+                android:textAlignment="center"
+                android:textColor="#60462f"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/image1"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_resep"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/set_bahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bahan: "
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#60462f"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_item"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nama_bahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wortel, Kol, Daun Bawang, Seledri, Tepung terigu,\nPenyedap rasa, Telur, Bawang putih bubuk "
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="#60462f"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/set_bahan"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/set_langkah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Langkah: "
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#60462f"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nama_bahan"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nama_langkah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iris tipis kol, \nwortel, dan daun bawang.\nCampurkan dengan tepung dan bumbu halus.
+                \nTuang air sedikit demi sedikit hingga menjadi adonan kental.\nPanaskan minyak goreng.
+                \nSendoki satu per satu dan goreng hingga matang kecokelatan.\nSajikan."
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="#60462f"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/set_langkah"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/icon_profile"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_profile"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="325dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nama_langkah"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/set_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sani Maulida"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="#60462f"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="195dp"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/icon_profile"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".InputFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/tw_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Your Recipe Here"
+            android:layout_marginVertical="15dp"
+            android:textSize="24sp"
+            android:textColor="#60462F"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/nama_resep"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Nama Resep"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tw_data" />
+
+        <EditText
+            android:id="@+id/bahan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Bahan-bahan"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/nama_resep" />
+
+        <EditText
+            android:id="@+id/langkah"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Langkah-langkah"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/bahan" />
+
+        <EditText
+            android:id="@+id/penulis"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:hint="Penulis"
+            android:background="@drawable/button_shape"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/langkah" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/upload_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/button_shape"
+            app:layout_constraintTop_toBottomOf="@+id/penulis">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:layout_marginVertical="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="visible"
+                android:src="@drawable/baseline_add_photo_alternate_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="24dp"
+            android:backgroundTint="#60462F"
+            android:text="share"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp"
+            app:layout_constraintTop_toBottomOf="@id/upload_constraint"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -72,14 +72,13 @@
         android:id="@+id/tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_register"
+        android:text="Don't have an account? Regist here"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="25dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/teal_200"
+        android:textColor="#606060"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
